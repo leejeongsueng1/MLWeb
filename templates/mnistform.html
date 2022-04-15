@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}bug U{% endblock %}
+{% block contents %}
+<div class="container">
+    <p style="height: 100px;"></p>
+    <br>
+    <h1>Mnist 숫자 인식 모델</h1>
+
+    <form action="/mnist" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" name="mnistfile" type="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+
+
+{% endblock %}
